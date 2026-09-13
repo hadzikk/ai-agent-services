@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "strictNullChecks": false,
+        "noImplicitAny": true,
+        "alwaysStrict": true,
+        "exactOptionalPropertyTypes": false,
+        "rewriteRelativeImportExtensions": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "types": ["node"]
+    },
+    "include": ["src/**/*"]
+}
