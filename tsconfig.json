@@ -12,5 +12,5 @@
         "outDir": "./dist",
         "types": ["node"]
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "tests/database/seed", "tests/database/script"]
 }

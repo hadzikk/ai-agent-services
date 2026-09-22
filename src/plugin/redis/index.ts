@@ -1,8 +1,9 @@
 import fp from "fastify-plugin";
+import { FastifyInstance } from "fastify";
 import { createClient } from "redis";
 import { env } from "../../config/index.ts";
 
-const redis = async (fastify) => {
+const redis = async (fastify: FastifyInstance) => {
     const client = createClient({
         socket: {
             host: env.REDIS_HOST,

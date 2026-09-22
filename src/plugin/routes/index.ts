@@ -1,10 +1,10 @@
 import { FastifyPluginAsync } from "fastify";
-import redisRoutes from "../../module/redis/redis.route.ts";
-import llmRoutes from "../../module/llm/llm.route.ts";
+import agentRoutes from "../../module/agent/agent.route.ts";
+import userRoutes from "../../module/user/user.route.ts";
 
 const routes: FastifyPluginAsync = async (fastify) => {
-    await fastify.register(redisRoutes, { prefix: "/redis" });
-    await fastify.register(llmRoutes, { prefix: "/llm" });
+    await fastify.register(userRoutes, { prefix: "/api/users" });
+    await fastify.register(agentRoutes, { prefix: "/api/agents" });
 }
 
 export default routes;
